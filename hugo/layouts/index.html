@@ -1,0 +1,21 @@
+{{ define "title" }}Wydania - {{ .Site.Title }}{{ end }}
+{{ define "content" }}
+  {{ $issues := where .Site.RegularPages "Section" "issues" }}
+  {{ $paginator := .Paginate $issues }}
+  <section class="container list">
+    <header>
+      <h1 class="title">
+        <a class="title-link" href="{{ .RelPermalink }}">Wydania</a>
+      </h1>
+    </header>
+    <ul>
+      {{ range $paginator.Pages }}
+      <li>
+        <span class="date">{{ .Date | time.Format (.Site.Params.dateFormat | default "2 January 2006") }}</span>
+        <a class="title" href="{{ .Params.externalLink | default .RelPermalink }}">{{ .Title }}</a>
+      </li>
+      {{ end }}
+    </ul>
+    {{ partial "pagination.html" . }}
+  </section>
+{{ end }}

@@ -1,0 +1,46 @@
+baseURL = 'https://example.org/'
+title = 'Euvic AI Newsletter'
+theme = 'hugo-coder'
+languageCode = 'pl'
+defaultContentLanguage = 'pl'
+enableEmoji = true
+
+[pagination]
+pagerSize = 8
+
+[markup]
+  [markup.highlight]
+  noClasses = false
+
+  [markup.goldmark]
+    [markup.goldmark.renderer]
+    unsafe = true
+
+[caches]
+  [caches.images]
+  dir = ':cacheDir/images'
+
+[params]
+author = 'Euvic AI Newsletter Team'
+description = 'Newsletter o AI, zawierający wyselekcjonowane informacje o najnowszych trendach, narzędziach i wydarzeniach związanych z AI. Tylko to co dotyczy nas - developerów.'
+keywords = 'ai, newsletter, company, updates'
+info = ['Company AI newsletter', 'Issues, drafts, and published posts']
+dateFormat = '2 January 2006'
+since = 2026
+colorScheme = 'auto'
+hideColorSchemeToggle = false
+
+[taxonomies]
+category = 'categories'
+tag = 'tags'
+series = 'series'
+
+[[menu.main]]
+name = 'Wydania'
+weight = 1
+url = 'issues/'
+
+[[menu.main]]
+name = 'O newsletterze'
+weight = 2
+url = 'about/'
