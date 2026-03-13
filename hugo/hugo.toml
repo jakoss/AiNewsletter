@@ -1,4 +1,4 @@
-baseURL = 'https://example.org/'
+baseURL = 'https://jakoss.github.io/AiNewsletter/'
 title = 'Euvic AI Newsletter'
 theme = 'hugo-coder'
 languageCode = 'pl'
