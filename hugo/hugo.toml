@@ -1,6 +1,6 @@
 baseURL = 'https://jakoss.github.io/AiNewsletter/'
 title = 'Euvic AI Newsletter'
-theme = 'hugo-coder'
+theme = ['hugo-admonitions', 'hugo-coder']
 languageCode = 'pl'
 defaultContentLanguage = 'pl'
 enableEmoji = true
@@ -24,7 +24,7 @@ pagerSize = 8
 author = 'Euvic AI Newsletter Team'
 description = 'Newsletter o AI, zawierający wyselekcjonowane informacje o najnowszych trendach, narzędziach i wydarzeniach związanych z AI. Tylko to co dotyczy nas - developerów.'
 keywords = 'ai, newsletter, company, updates'
-info = ['Company AI newsletter', 'Issues, drafts, and published posts']
+info = ['AI Newsletter', 'Wyselekcjonowane informacje o najnowszych trendach, narzędziach i wydarzeniach związanych z AI']
 dateFormat = '2 January 2006'
 since = 2026
 colorScheme = 'auto'
